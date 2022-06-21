@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose form</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+</head>
+<body>
+<br><br><br><br>
+<div class="container-fluid">
+    <form th:action="@{/to_expense}" method="Request" style="max-width: 500px; margin: 0 auto;">
+        <div class="border border-secondary rounded p-3">
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary m-2" >Expense</button>
+            </div>
+        </div>
+    </form>
+</div>
+<br><br>
+<div>
+    <form th:action="@{/to_cat}" method="Request"  style="max-width: 500px; margin: 0 auto;">
+        <div class="border border-secondary rounded p-3">
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary m-2">Category</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
